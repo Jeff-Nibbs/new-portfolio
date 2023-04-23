@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: local('LeagueSpartan'), url('./fonts/league-spartan/LeagueSpartan-Bold.otf') format('truetype');
+  font-weight: bold;
+}

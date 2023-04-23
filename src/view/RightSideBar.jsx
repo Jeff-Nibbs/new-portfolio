@@ -4,7 +4,11 @@ function RightSideBar() {
   }
   return (
     <div className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-16 z-10'>
-      <a href='mailto:danielnibbs100@gmail.com' style={textRotation} className='text-gray-400 text-lg cursor-pointer hover:text-blue-400'>
+      <a
+        href='mailto:danielnibbs100@gmail.com'
+        style={textRotation}
+        className='text-gray-400 text-lg cursor-pointer font-lato font-normal hover:text-blue-400'
+      >
         danielnibbs100@gmail.com
       </a>
 

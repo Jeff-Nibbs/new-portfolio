@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav className='flex justify-center items-center fixed min-w-full py-3 px-4 z-10'>
       <img src='src/assets/d-button-icon.svg' alt='logo' className='w-16 mr-auto ml-7' />
-      <div className='flex items-center gap-7 mr-7 '>
+      <div className='flex items-center gap-7 mr-7 font-lato font-light'>
         <a href='https://danielnibbs.com/' className='link text-lg cursor-pointer text-gray-400'>
           ABOUT
         </a>
