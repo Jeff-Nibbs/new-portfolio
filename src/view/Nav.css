@@ -1,0 +1,44 @@
+nav .link {
+  position: relative;
+  text-decoration: none;
+}
+
+nav .link::before,
+nav .link::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+nav .link::before {
+  content: '';
+  right: -10px;
+  top: -5px;
+  border-top: 2px solid rgb(59, 130, 246);
+  border-right: 2px solid rgb(59, 130, 246);
+  border-radius: 4px;
+  transform: translate(-100%, 50%);
+}
+
+nav .link:after {
+  content: '';
+  left: -10px;
+  bottom: -5px;
+  border-bottom: 2px solid rgb(59, 130, 246);
+  border-left: 2px solid rgb(59, 130, 246);
+  border-radius: 4px;
+  transform: translate(100%, -50%);
+}
+
+nav .link:hover:before,
+nav .link:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+nav .link:hover {
+  color: rgb(96, 165, 250);
+}
