@@ -20,7 +20,7 @@ function RightSideBar() {
           scrollTrigger: {
             trigger: rightSideBar.current,
             start: 'top top',
-            end: '+=600',
+            end: '+=800',
             scrub: 0.2,
           },
         })
@@ -33,11 +33,11 @@ function RightSideBar() {
     writingMode: 'vertical-rl',
   }
   return (
-    <div ref={rightSideBar} className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-16 z-10'>
+    <div ref={rightSideBar} className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-14 z-10'>
       <a
         href='mailto:danielnibbs100@gmail.com'
         style={textRotation}
-        className='side-email invisible text-gray-400 text-lg cursor-pointer font-lato font-normal hover:text-blue-400'
+        className='side-email invisible text-gray-400 text-lg cursor-pointer font-lato font-normal hover:text-sky-400'
       >
         danielnibbs100@gmail.com
       </a>

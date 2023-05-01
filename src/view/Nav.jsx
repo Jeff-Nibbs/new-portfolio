@@ -37,7 +37,7 @@ function Nav() {
           href={cv}
           target='_blank'
           rel='noopener noreferrer'
-          className='invisible nav4 flex justify-center item-center border-2 rounded py-3 px-4 cursor-pointer text-blue-500 border-blue-400 hover:text-gray-50 hover:bg-blue-400'
+          className='invisible nav4 flex justify-center item-center border-2 rounded py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
         >
           RESUME
         </a>

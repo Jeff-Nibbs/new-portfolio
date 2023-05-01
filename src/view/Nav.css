@@ -17,8 +17,8 @@ nav .link::before {
   content: '';
   right: -7px;
   top: -3px;
-  border-top: 2px solid rgb(96, 165, 250);
-  border-right: 2px solid rgb(96, 165, 250);
+  border-top: 2px solid #38bdf8;
+  border-right: 2px solid #38bdf8;
   border-radius: 4px;
   transform: translate(-100%, 50%);
 }
@@ -27,8 +27,8 @@ nav .link:after {
   content: '';
   left: -7px;
   bottom: -3px;
-  border-bottom: 2px solid rgb(96, 165, 250);
-  border-left: 2px solid rgb(96, 165, 250);
+  border-bottom: 2px solid #38bdf8;
+  border-left: 2px solid #38bdf8;
   border-radius: 4px;
   transform: translate(100%, -50%);
 }
@@ -40,5 +40,5 @@ nav .link:hover:after {
 }
 
 nav .link:hover {
-  color: rgb(96, 165, 250);
+  color: #38bdf8;
 }
