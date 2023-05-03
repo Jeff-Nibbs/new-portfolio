@@ -21,7 +21,7 @@ function Portfolio() {
         .timeline()
         .from('.title2', {
           autoAlpha: 0,
-          x: 400,
+          x: -400,
           y: 200,
           ease: 'power4.out',
           scrollTrigger: {
@@ -33,11 +33,11 @@ function Portfolio() {
         })
         .from('.portCard1', {
           autoAlpha: 0,
-          x: -400,
+
           ease: 'power4.out',
           scrollTrigger: {
             trigger: '.portCard1',
-            start: 'center 90%',
+            start: 'center 80%',
             end: 'bottom center',
 
             scrub: 0.2,
@@ -45,11 +45,11 @@ function Portfolio() {
         })
         .from('.portCard2', {
           autoAlpha: 0,
-          x: 400,
+
           ease: 'power4.out',
           scrollTrigger: {
             trigger: '.portCard2',
-            start: 'center 90%',
+            start: 'center 80%',
             end: 'bottom center',
 
             scrub: 0.2,
@@ -57,11 +57,11 @@ function Portfolio() {
         })
         .from('.portCard3', {
           autoAlpha: 0,
-          x: -400,
+
           ease: 'power4.out',
           scrollTrigger: {
             trigger: '.portCard3',
-            start: 'center 90%',
+            start: 'center 80%',
             end: 'bottom center',
 
             scrub: 0.2,
@@ -74,7 +74,8 @@ function Portfolio() {
   return (
     <section ref={portfolio} className='max-w-5xl mx-auto pt-16 bg-slate-100'>
       <h2 className='title2 invisible text-9xl my-32 font-bold text-center text-gray-800 font-LeagueSpartan uppercase'>Projects</h2>
-      <div className='portCard1 invisible flex text-transparent rounded -mb-28 -mt-28 -ml-28 hover:text-gray-800'>
+
+      <div className='portCard1 invisible flex text-transparent rounded -ml-28 hover:text-gray-800'>
         <div className='w-1/2 rounded overflow-hidden relative'>
           <img
             src={pic1}
@@ -82,6 +83,7 @@ function Portfolio() {
             className='hover:scale-125 transition-all block w-full aspect-square object-contain object-center'
           />
         </div>
+
         <div className='w-1/2 ml-5 flex flex-col justify-center'>
           <h2 className='heading text-6xl font-bold font-LeagueSpartan uppercase'>Don Nuva Web Solutions</h2>
           <p>
@@ -89,10 +91,28 @@ function Portfolio() {
             <span className='text-xl pl-1 text-gray-700 font-light font-lato'>CSS /</span>
             <span className='text-xl pl-1 text-gray-700 font-light font-lato'>Javascript</span>
           </p>
+          <div className='flex '>
+            <a
+              href='https://github.com/Jeff-Nibbs/Front-sass-page'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav4 flex justify-center item-center border-2 rounded mt-7 mr-5 py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+            >
+              GITHUB
+            </a>
+            <a
+              href='https://jeff-nibbs.github.io/Front-sass-page/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav4 flex justify-center item-center border-2 rounded mt-7 py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+            >
+              LIVE DEMO
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className='portCard2 invisible flex text-transparent rounded -mb-28 -mt-28 -mr-28 hover:text-gray-800'>
+      <div className='portCard2 invisible flex text-transparent rounded -mr-28 hover:text-gray-800'>
         <div className='w-1/2 mr-5 flex flex-col justify-center text-right'>
           <h2 className='heading text-6xl font-semibold font-LeagueSpartan'>LOAN CALCULATOR</h2>
           <p>
@@ -101,6 +121,24 @@ function Portfolio() {
             <span className='text-xl pl-1 text-gray-700 font-light font-lato'>Javascript /</span>
             <span className='text-xl pl-1 text-gray-700 font-light font-lato'>React.js</span>
           </p>
+          <div className='flex ml-auto'>
+            <a
+              href='https://github.com/Jeff-Nibbs/loan-calulator'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav4 flex justify-center item-center border-2 rounded mt-7 mr-5 py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+            >
+              GITHUB
+            </a>
+            <a
+              href='https://loan-calulator.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav4 flex justify-center item-center border-2 rounded mt-7 py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+            >
+              LIVE DEMO
+            </a>
+          </div>
         </div>
         <div className='w-1/2 rounded overflow-hidden relative'>
           <img
@@ -111,7 +149,7 @@ function Portfolio() {
         </div>
       </div>
 
-      <div className='portCard3 invisible flex text-transparent rounded -mb-28 -mt-28 -ml-28 hover:text-gray-800'>
+      <div className='portCard3 invisible flex text-transparent rounded -ml-28 hover:text-gray-800'>
         <div className='w-1/2 rounded overflow-hidden relative'>
           <img
             src={pic3}
@@ -127,6 +165,24 @@ function Portfolio() {
             <span className='text-xl pl-1 text-gray-700 font-light font-lato'>Javascript /</span>
             <span className='text-xl pl-1 text-gray-700 font-light font-lato'>API</span>
           </p>
+          <div className='flex'>
+            <a
+              href='https://github.com/Jeff-Nibbs/sous-chef-helper'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav4 flex justify-center item-center border-2 rounded mt-7 mr-5 py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+            >
+              GITHUB
+            </a>
+            <a
+              href='https://jeff-nibbs.github.io/sous-chef-helper/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav4 flex justify-center item-center border-2 rounded mt-7 py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+            >
+              LIVE DEMO
+            </a>
+          </div>
         </div>
       </div>
     </section>
