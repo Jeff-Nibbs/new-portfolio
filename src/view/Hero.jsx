@@ -34,7 +34,7 @@ function Hero() {
           <div className='hero-text3 invisible'>AM</div>
         </div>
         <div className='line h-1.5 w-0 bg-sky-400 absolute top-3.5 right-0'></div>
-        <h1 className='title invisible text-8xl pt-3.5 font-bold text-gray-800 font-LeagueSpartan'>DANIEL NIBBS</h1>
+        <h1 className='title invisible text-9xl pt-3.5 font-bold text-gray-800 font-LeagueSpartan'>DANIEL NIBBS</h1>
         <div className='hero-text4 invisible text-right font-light text-xl leading-5 text-sky-400 font-lato'>A FULL STACK DEVELOPER</div>
       </div>
     </section>
