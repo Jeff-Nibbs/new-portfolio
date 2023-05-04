@@ -82,7 +82,7 @@ function About() {
           </p>
         </div>
         <div>
-          <span className='tagcloud [-webkit-text-stroke: 1px #6b7280;] font-LeagueSpartan text-base text-gray-500 ml-8'></span>
+          <span className='tagcloud font-LeagueSpartan text-base text-gray-500 ml-8'></span>
         </div>
       </div>
     </section>
