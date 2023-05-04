@@ -2,6 +2,8 @@ import Nav from './view/Nav'
 import Hero from './view/Hero'
 import About from './view/About'
 import Portfolio from './view/Portfolio'
+import Contact from './view/Contact'
+import Footer from './view/Footer'
 import './fonts/league-spartan/LeagueSpartan-Bold.otf'
 import './App.css'
 
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <About />
       <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   )
 }

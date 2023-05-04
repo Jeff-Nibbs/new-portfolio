@@ -23,7 +23,9 @@ function Nav() {
 
   return (
     <nav ref={nav} className='flex justify-center items-center fixed min-w-full py-3 px-4 z-10'>
-      <img src={logo} alt='logo' className='drop-shadow-xl logo w-16 mr-auto ml-7' />
+      <a href='#' className='mr-auto ml-7'>
+        <img src={logo} alt='logo' className='logo w-16 ' />
+      </a>
       <div className='flex items-center gap-7 mr-7 font-lato font-light'>
         <a href='https://danielnibbs.com/' className='invisible link nav1 text-lg cursor-pointer text-gray-400'>
           ABOUT
