@@ -5,7 +5,7 @@ function Footer() {
         href='https://www.linkedin.com/in/daniel-nibbs/'
         target='_blank'
         rel='noopener noreferrer'
-        className=' font-lato text-lg cursor-pointer text-gray-400 font-light'
+        className=' font-lato text-lg cursor-pointer text-gray-400 font-light hover:text-sky-400'
       >
         LINKEDIN
       </a>
@@ -13,7 +13,7 @@ function Footer() {
         href='https://github.com/Jeff-Nibbs/new-portfolio'
         target='_blank'
         rel='noopener noreferrer'
-        className=' font-lato text-lg cursor-pointer mx-auto text-gray-400 font-light uppercase'
+        className=' font-lato text-lg cursor-pointer mx-auto text-gray-400 font-light uppercase hover:text-sky-400'
       >
         Designed & Built by Daniel Nibbs
       </a>
@@ -21,7 +21,7 @@ function Footer() {
         href='https://github.com/Jeff-Nibbs'
         target='_blank'
         rel='noopener noreferrer'
-        className=' font-lato text-lg cursor-pointer text-gray-400 font-light'
+        className=' font-lato text-lg cursor-pointer text-gray-400 font-light hover:text-sky-400'
       >
         GITHUB
       </a>
