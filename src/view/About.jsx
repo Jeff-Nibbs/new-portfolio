@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import TagCloud from 'TagCloud'
+import { TagCloud } from '@frank-mayer/react-tag-cloud'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 function About() {
   // set up ref for about
@@ -26,42 +26,6 @@ function About() {
     return () => ctx.revert()
   }, [])
 
-  // useEffect for tagcloud
-  useEffect(() => {
-    return () => {
-      const container = '.tagcloud'
-      const texts = [
-        'React',
-        'Python',
-        'JavaScript',
-        'Leadership',
-        'CSS',
-        'PHP',
-        'Tailwindcss',
-        'Communication',
-        'Git',
-        'Typescript',
-        'HTML',
-        'Node.js',
-        'Teamwork',
-        'SQL',
-        'JQuery',
-        'Bootstrap',
-        'GitHub',
-        'Figma',
-      ]
-      const options = {
-        radius: 300,
-        maxSpeed: 'normal',
-        initSpeed: 'slow',
-        direction: 135,
-        keep: true,
-      }
-
-      TagCloud(container, texts, options)
-    }
-  }, [])
-
   return (
     <section ref={about} className='invisible flex justify-center items-center my-24'>
       <div className='max-w-5xl p-6 grid gap-8 grid-cols-2'>
@@ -82,7 +46,34 @@ function About() {
           </p>
         </div>
         <div>
-          <span className='tagcloud font-LeagueSpartan text-base text-gray-500 ml-8'></span>
+          <TagCloud
+            options={w => ({
+              radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
+              maxSpeed: 'fast',
+            })}
+            className='text-gray-800 font-lato text-base ml-8'
+          >
+            {[
+              'React',
+              'Python',
+              'JavaScript',
+              'Leadership',
+              'CSS',
+              'PHP',
+              'Tailwindcss',
+              'Communication',
+              'Git',
+              'Typescript',
+              'HTML',
+              'Node.js',
+              'Teamwork',
+              'SQL',
+              'JQuery',
+              'Bootstrap',
+              'GitHub',
+              'Figma',
+            ]}
+          </TagCloud>
         </div>
       </div>
     </section>
