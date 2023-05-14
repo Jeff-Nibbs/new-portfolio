@@ -22,25 +22,25 @@ function Nav() {
   }, [])
 
   return (
-    <nav ref={nav} className='flex justify-center items-center fixed min-w-full py-3 px-4 z-10'>
-      <a href='#' className='mr-auto ml-7'>
-        <img src={logo} alt='logo' className='logo w-16 ' />
+    <nav ref={nav} className='flex p-auto justify-center items-center fixed min-w-full py-3 md:px-4 z-10'>
+      <a href='#' className='mr-auto ml-7 hidden md:block '>
+        <img src={logo} alt='logo' className='logo w-5 md:w-16 ' />
       </a>
-      <div className='flex items-center gap-7 mr-7 font-lato font-light'>
-        <a href='https://danielnibbs.com/' className='invisible link nav1 text-lg cursor-pointer text-gray-400'>
+      <div className='flex justify-center items-center gap-10 md:gap-7 md:mr-7 font-lato font-light'>
+        <a href='https://danielnibbs.com/' className='invisible link nav1 text-sm md:text-lg cursor-pointer text-gray-400'>
           ABOUT
         </a>
-        <a href='https://danielnibbs.com/' className='invisible link nav2 text-lg cursor-pointer text-gray-400'>
+        <a href='https://danielnibbs.com/' className='invisible link nav2 text-sm md:text-lg cursor-pointer text-gray-400'>
           PROJECTS
         </a>
-        <a href='https://danielnibbs.com/' className='invisible link nav3 text-lg cursor-pointer text-gray-400'>
+        <a href='https://danielnibbs.com/' className='invisible link nav3 text-sm md:text-lg cursor-pointer text-gray-400'>
           CONTACT
         </a>
         <a
           href={cv}
           target='_blank'
           rel='noopener noreferrer'
-          className='invisible nav4 flex justify-center item-center border-2 rounded py-3 px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
+          className='invisible nav4 flex justify-center item-center border-2 rounded py-1 px-2 text-sm md:py-3 md:px-4 cursor-pointer text-sky-400 border-sky-500 hover:text-gray-50 hover:bg-sky-400'
         >
           RESUME
         </a>

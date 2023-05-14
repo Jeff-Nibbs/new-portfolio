@@ -38,7 +38,7 @@ function LeftSideBar() {
   }, [])
 
   return (
-    <div ref={leftSidebar} className='flex flex-col justify-center items-center gap-3 lg:gap-5 fixed bottom-2 left-7 lg:left-14 z-10'>
+    <div ref={leftSidebar} className='flex flex-col justify-center items-center gap-3 lg:gap-5 fixed bottom-2 left-5 lg:left-14 z-10'>
       <a href='https://github.com/Jeff-Nibbs' target='_blank' rel='noopener noreferrer'>
         <FiGithub className='translate-y-0 side-link1 invisible text-gray-400 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
       </a>

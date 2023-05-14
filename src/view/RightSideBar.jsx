@@ -33,7 +33,7 @@ function RightSideBar() {
     writingMode: 'vertical-rl',
   }
   return (
-    <div ref={rightSideBar} className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-7 lg:right-14 z-10'>
+    <div ref={rightSideBar} className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-5 lg:right-14 z-10'>
       <a
         href='mailto:danielnibbs100@gmail.com'
         style={textRotation}
