@@ -24,18 +24,18 @@ function Hero() {
   }, [])
 
   return (
-    <section ref={hero} className='flex justify-center items-center h-screen relative'>
+    <section ref={hero} className='flex justify-center items-end md:items-center h-96 md:h-screen relative'>
       <LeftSideBar />
       <RightSideBar />
       <div className='relative text-center lg:w-auto w-7/12'>
-        <div className='flex gap-0.5 md:gap-2 lg:gap-3 text-left text-xs md:text-lg lg:text-xl lg:pl-3 text-gray-400 font-light font-lato'>
-          <div className='hero-text1 invisible'>HI</div>
+        <div className='flex gap-1 md:gap-2 lg:gap-3 text-left text-sm md:text-lg lg:text-xl lg:pl-3 text-gray-400 font-light font-lato'>
+          <div className='hero-text1 invisible hidden md:inline '>HI</div>
           <div className='hero-text2 invisible'>I</div>
           <div className='hero-text3 invisible'>AM</div>
         </div>
         <div className='line h-1.5 w-0 bg-sky-400 absolute top-1 right-0 md:top-2.5 lg:top-3.5'></div>
-        <h1 className='title invisible text-3xl md:text-6xl lg:text-9xl pt-3.5 font-bold text-gray-800 font-LeagueSpartan'>DANIEL NIBBS</h1>
-        <div className='hero-text4 invisible text-right font-light text-xs md:text-lg lg:text-2xl leading-5 text-sky-400 font-lato'>
+        <h1 className='title invisible text-6xl lg:text-9xl pt-3.5 font-bold text-gray-800 font-LeagueSpartan'>DANIEL NIBBS</h1>
+        <div className='hero-text4 invisible text-right font-light text-sm md:text-lg lg:text-2xl leading-5 text-sky-400 font-lato'>
           A FULL STACK DEVELOPER
         </div>
       </div>
