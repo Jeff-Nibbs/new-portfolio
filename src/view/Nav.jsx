@@ -12,7 +12,7 @@ function Nav() {
     let ctx = gsap.context(() => {
       gsap
         .timeline()
-        .from('.logo', { autoAlpha: 0, y: -50, duration: 1, ease: 'power4.out', delay: 6.5 })
+        .from('.logo', { autoAlpha: 0, y: -50, duration: 1, ease: 'power4.out', delay: 3.7 })
         .from('.nav1', { autoAlpha: 0, y: -50, duration: 1, ease: 'power4.out' }, '-=0.75')
         .from('.nav2', { autoAlpha: 0, y: -50, duration: 1, ease: 'power4.out' }, '-=0.75')
         .from('.nav3', { autoAlpha: 0, y: -50, duration: 1, ease: 'power4.out' }, '-=0.75')

@@ -13,7 +13,7 @@ function RightSideBar() {
     let ctx = gsap.context(() => {
       gsap
         .timeline()
-        .to('.side-line2', { height: 112, duration: 3, ease: 'power4.inOut', delay: 3 })
+        .to('.side-line2', { height: 112, duration: 3, ease: 'power4.inOut', delay: 2.5 })
         .from('.side-email', { autoAlpha: 0, y: -50, duration: 1.2, ease: 'power4.out', delay: 0.3 }, '-=0.7')
         .to(rightSideBar.current, {
           y: 500,
@@ -33,11 +33,11 @@ function RightSideBar() {
     writingMode: 'vertical-rl',
   }
   return (
-    <div ref={rightSideBar} className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-14 z-10'>
+    <div ref={rightSideBar} className='flex flex-col justify-center items-center gap-5 fixed bottom-2 right-7 lg:right-14 z-10'>
       <a
         href='mailto:danielnibbs100@gmail.com'
         style={textRotation}
-        className='side-email invisible text-gray-400 text-lg cursor-pointer font-lato font-normal hover:text-sky-400'
+        className='side-email invisible text-gray-400 text-sm lg:text-lg cursor-pointer font-lato font-normal hover:text-sky-400'
       >
         danielnibbs100@gmail.com
       </a>
