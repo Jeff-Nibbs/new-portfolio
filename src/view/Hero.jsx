@@ -24,7 +24,7 @@ function Hero() {
   }, [])
 
   return (
-    <section ref={hero} className='flex justify-center items-end md:items-center h-96 md:h-screen relative'>
+    <section id='hero' ref={hero} className='flex justify-center items-end md:items-center h-96 md:h-screen relative'>
       <LeftSideBar />
       <RightSideBar />
       <div className='relative text-center lg:w-auto w-7/12'>

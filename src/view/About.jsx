@@ -27,7 +27,7 @@ function About() {
   }, [])
 
   return (
-    <section ref={about} className='invisible flex justify-center items-center'>
+    <section id='about' ref={about} className='invisible flex justify-center items-center'>
       <div className='max-w-5xl p-6 grid md:gap-8 grid-cols-1 md:grid-cols-2'>
         <div className='flex flex-col pt-16 md:pt-0 text-center md:text-left justify-center items-start'>
           <h2 className='md:pb-7 m-auto text-3xl md:text-7xl font-LeagueSpartan text-gray-700 mb-5'>

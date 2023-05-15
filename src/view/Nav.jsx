@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import cv from '../assets/Daniel-cv.pdf'
 import logo from '../assets/d-button-icon.svg'
 import '../view/Nav.css'
@@ -23,19 +24,46 @@ function Nav() {
 
   return (
     <nav ref={nav} className='flex p-auto justify-center items-center fixed min-w-full py-3 md:px-4 z-10'>
-      <a href='#' className='mr-auto ml-7 hidden md:block '>
+      <Link to='hero' smooth={true} delay={150} duration={1000} isDynamic={true} className='mr-auto cursor-pointer ml-7 hidden md:block '>
         <img src={logo} alt='logo' className='logo w-5 md:w-16 ' />
-      </a>
+      </Link>
       <div className='flex justify-center items-center gap-10 md:gap-7 md:mr-7 font-lato font-light'>
-        <a href='https://danielnibbs.com/' className='invisible link nav1 text-sm md:text-lg cursor-pointer text-gray-400'>
+        <Link
+          to='about'
+          smooth={true}
+          delay={150}
+          duration={1000}
+          isDynamic={true}
+          offset={100}
+          className='invisible link nav1 text-sm md:text-lg cursor-pointer text-gray-400'
+        >
           ABOUT
-        </a>
-        <a href='https://danielnibbs.com/' className='invisible link nav2 text-sm md:text-lg cursor-pointer text-gray-400'>
+        </Link>
+
+        <Link
+          to='projects'
+          smooth={true}
+          delay={150}
+          duration={1000}
+          isDynamic={true}
+          offset={50}
+          className='invisible link nav2 text-sm md:text-lg cursor-pointer text-gray-400'
+        >
           PROJECTS
-        </a>
-        <a href='https://danielnibbs.com/' className='invisible link nav3 text-sm md:text-lg cursor-pointer text-gray-400'>
+        </Link>
+
+        <Link
+          to='contact'
+          smooth={true}
+          delay={150}
+          duration={1000}
+          isDynamic={true}
+          offset={100}
+          className='invisible link nav3 text-sm md:text-lg cursor-pointer text-gray-400'
+        >
           CONTACT
-        </a>
+        </Link>
+
         <a
           href={cv}
           target='_blank'

@@ -72,7 +72,7 @@ function Portfolio() {
   }, [])
 
   return (
-    <section ref={portfolio} className=' max-w-xs md:max-w-5xl mx-auto md:pt-16 bg-slate-100'>
+    <section id='projects' ref={portfolio} className=' max-w-xs md:max-w-5xl mx-auto md:pt-16 bg-slate-100'>
       <h2 className='title2 invisible text-6xl md:text-9xl my-32 font-bold text-center text-gray-800 font-LeagueSpartan uppercase'>Projects</h2>
 
       <div className='portCard1 mb-12 invisible flex text-transparent rounded md:-ml-28 '>
