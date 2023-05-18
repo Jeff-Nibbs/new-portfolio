@@ -1,7 +1,15 @@
 import { useEffect, useRef } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import pic1 from '../assets/dn-site.png'
 import pic2 from '../assets/loan-calculator.png'
 import pic3 from '../assets/sous-chef-helper.png'
+import placeholder1 from '../assets/dn-site-placeholder.jpg'
+import placeholder2 from '../assets/loan-calculator-placeholder.jpg'
+import placeholder3 from '../assets/sous-chef-helper-placeholder.jpg'
+import picSmall1 from '../assets/dn-site-small.jpg'
+import picSmall2 from '../assets/loan-calculator-small.jpg'
+import picSmall3 from '../assets/sous-chef-helper-small.jpg'
 import '../view/Portfolio.css'
 
 import { gsap } from 'gsap'
@@ -75,12 +83,16 @@ function Portfolio() {
     <section id='projects' ref={portfolio} className=' max-w-xs md:max-w-5xl mx-auto md:pt-16 bg-slate-100'>
       <h2 className='title2 invisible text-6xl md:text-9xl my-32 font-bold text-center text-gray-800 font-LeagueSpartan uppercase'>Projects</h2>
 
-      <div className='portCard1 mb-12 invisible flex text-transparent rounded md:-ml-28 '>
-        <div className='w-1/2 rounded overflow-hidden relative'>
-          <img
-            src={pic1}
+      <div className='portCard1 justify-center mb-12 invisible flex justify-center text-transparent rounded md:-ml-28 '>
+        <div className='w-1/2 hidden md:block rounded overflow-hidden relative'>
+          <LazyLoadImage
+            src={picSmall1}
             alt='portfolio picture'
-            className='hover:scale-125 transition-all block w-full aspect-square object-contain object-center'
+            effect='blur'
+            height={300}
+            width={533}
+            placeholderSrc={placeholder1}
+            className='hover:scale-125 transition-all block w-full object-contain object-center'
           />
         </div>
 
@@ -112,7 +124,7 @@ function Portfolio() {
         </div>
       </div>
 
-      <div className='portCard2 mb-12 invisible flex text-transparent rounded md:-mr-28 '>
+      <div className='portCard2 justify-center mb-12 invisible flex text-transparent rounded md:-mr-28 '>
         <div className='w-1/2 mr-5 flex flex-col justify-center text-right'>
           <h2 className='heading hover:text-gray-800 text-lg md:text-6xl font-semibold font-LeagueSpartan'>LOAN CALCULATOR</h2>
           <p>
@@ -140,21 +152,29 @@ function Portfolio() {
             </a>
           </div>
         </div>
-        <div className='w-1/2 rounded overflow-hidden relative'>
-          <img
-            src={pic2}
+        <div className='w-1/2 rounded hidden md:block overflow-hidden relative'>
+          <LazyLoadImage
+            src={picSmall2}
             alt='portfolio picture'
-            className='hover:scale-125 transition-all block w-full aspect-square object-contain object-center'
+            effect='blur'
+            height={300}
+            width={533}
+            placeholderSrc={placeholder2}
+            className='hover:scale-125 transition-all block w-full object-contain object-center'
           />
         </div>
       </div>
 
-      <div className='portCard3 mb-12 invisible flex text-transparent rounded md:-ml-28 '>
-        <div className='w-1/2 rounded overflow-hidden relative'>
-          <img
-            src={pic3}
+      <div className='portCard3 mb-12 invisible flex justify-center text-transparent rounded md:-ml-28 '>
+        <div className='w-1/2 rounded hidden md:block overflow-hidden relative'>
+          <LazyLoadImage
+            src={picSmall3}
             alt='portfolio picture'
-            className='hover:scale-125 transition-all block w-full aspect-square object-contain object-center'
+            effect='blur'
+            height={300}
+            width={533}
+            placeholderSrc={placeholder3}
+            className='hover:scale-125 transition-all block w-full object-contain object-center'
           />
         </div>
         <div className='w-1/2 ml-5 flex flex-col justify-center'>
