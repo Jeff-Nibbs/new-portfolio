@@ -28,7 +28,7 @@ function Hero() {
       <LeftSideBar />
       <RightSideBar />
       <div className='relative text-center lg:w-auto w-7/12'>
-        <div className='flex gap-1 md:gap-2 lg:gap-3 text-left text-sm md:text-lg lg:text-xl lg:pl-3 text-gray-400 font-light font-lato'>
+        <div className='flex gap-1 md:gap-2 lg:gap-3 text-left text-sm md:text-lg lg:text-xl lg:pl-3 text-gray-600 font-light font-lato'>
           <div className='hero-text1 invisible hidden md:inline '>HI</div>
           <div className='hero-text2 invisible'>I</div>
           <div className='hero-text3 invisible'>AM</div>

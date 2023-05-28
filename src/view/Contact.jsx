@@ -18,7 +18,7 @@ function Contact() {
     <section id='contact' ref={contact} className='flex justify-center items-center h-screen relative'>
       <div className='flex flex-col text-center gap-5'>
         <h2 className='text-8xl pt-3.5 font-bold text-gray-800 font-LeagueSpartan'>LET&apos;S TALK</h2>
-        <p className='leading-snug w-4/5 md:w-3/5 mx-auto text-xl font-light font-lato text-gray-400'>
+        <p className='leading-snug w-4/5 md:w-3/5 mx-auto text-xl font-light font-lato text-gray-600'>
           If you&apos;re interested in working together or have any feedback on my portfolio, feel free to get in touch. I&apos;d love to hear from
           you!
         </p>

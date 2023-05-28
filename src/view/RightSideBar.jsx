@@ -37,12 +37,12 @@ function RightSideBar() {
       <a
         href='mailto:danielnibbs100@gmail.com'
         style={textRotation}
-        className='side-email invisible text-gray-400 text-sm lg:text-lg cursor-pointer font-lato font-normal hover:text-sky-400'
+        className='side-email invisible text-gray-600 text-sm lg:text-lg cursor-pointer font-lato font-normal hover:text-sky-400'
       >
         danielnibbs100@gmail.com
       </a>
 
-      <div className='side-line2 w-0.5 h-0 bg-gray-400'></div>
+      <div className='side-line2 w-0.5 h-0 bg-gray-600'></div>
     </div>
   )
 }

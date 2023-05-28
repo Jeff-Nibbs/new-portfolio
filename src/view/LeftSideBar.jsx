@@ -40,18 +40,18 @@ function LeftSideBar() {
   return (
     <div ref={leftSidebar} className='flex flex-col justify-center items-center gap-3 lg:gap-5 fixed bottom-2 left-5 lg:left-14 z-10'>
       <a href='https://github.com/Jeff-Nibbs' target='_blank' rel='noopener noreferrer'>
-        <FiGithub className='translate-y-0 side-link1 invisible text-gray-400 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
+        <FiGithub className='translate-y-0 side-link1 invisible text-gray-600 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
       </a>
       <a href='https://www.linkedin.com/in/daniel-nibbs/' target='_blank' rel='noopener noreferrer'>
-        <FiLinkedin className='translate-y-0 side-link2 invisible text-gray-400 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
+        <FiLinkedin className='translate-y-0 side-link2 invisible text-gray-600 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
       </a>
       <a href='mailto:danielnibbs100@gmail.com'>
-        <FiMail className='translate-y-0 side-link3 invisible text-gray-400 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
+        <FiMail className='translate-y-0 side-link3 invisible text-gray-600 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
       </a>
       <a href={cv} download>
-        <FiFileText className='translate-y-0 side-link4 invisible text-gray-400 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
+        <FiFileText className='translate-y-0 side-link4 invisible text-gray-600 text-3xl lg:text-4xl cursor-pointer hover:text-sky-400' />
       </a>
-      <div className='side-line m-0 w-0.5 h-0 bg-gray-400'></div>
+      <div className='side-line m-0 w-0.5 h-0 bg-gray-600'></div>
     </div>
   )
 }

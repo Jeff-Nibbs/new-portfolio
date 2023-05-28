@@ -35,7 +35,7 @@ function Nav() {
           duration={1000}
           isDynamic={true}
           offset={100}
-          className='invisible link nav1 text-sm md:text-lg cursor-pointer text-gray-400'
+          className='invisible link nav1 text-sm md:text-lg cursor-pointer text-gray-600'
         >
           ABOUT
         </Link>
@@ -47,7 +47,7 @@ function Nav() {
           duration={1000}
           isDynamic={true}
           offset={50}
-          className='invisible link nav2 text-sm md:text-lg cursor-pointer text-gray-400'
+          className='invisible link nav2 text-sm md:text-lg cursor-pointer text-gray-600'
         >
           PROJECTS
         </Link>
@@ -59,7 +59,7 @@ function Nav() {
           duration={1000}
           isDynamic={true}
           offset={100}
-          className='invisible link nav3 text-sm md:text-lg cursor-pointer text-gray-400'
+          className='invisible link nav3 text-sm md:text-lg cursor-pointer text-gray-600'
         >
           CONTACT
         </Link>
